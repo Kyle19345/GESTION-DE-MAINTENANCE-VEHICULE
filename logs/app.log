@@ -1,0 +1,1170 @@
+2025-10-16 12:26:15 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:26:48 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:26:48 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:27:04 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:27:47 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:27:48 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:28:03 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:28:04 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:28:05 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:28:10 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:28:22 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:29:04 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:29:05 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:29:06 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:29:08 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:29:09 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:29:15 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:29:33 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='fdùgkfùgm', description='ghfghfg', type_intervention='gjfdùmgjù', date_intervention='01/01/2000', vehicule='hgfhg', dure=4, technicien=['technicien'], statut='Planifié')
+2025-10-16 12:29:33 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 47, in add_intervention
+    self.cur.execute("INSERT INTO intervention(ref,description,type,date_intervention,vehicule,dure,technicien,statut) VALUES(?,?,?,?,?,?,?,?)",
+sqlite3.OperationalError: table intervention has no column named technicien
+2025-10-16 12:29:40 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:30:16 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:30:16 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:30:17 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:30:30 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='01', matricule='gfdgd', marque='hhgj', modele='hjhgjhgj', annee='ghjghjgh', kilometrage=0)
+2025-10-16 12:30:30 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-16 12:30:30 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:31:04 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:31:30 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:31:30 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:31:32 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:31:58 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='01', matricule='gfdgd', marque='hhgj', modele='hjhgjhgj', annee='ghjghjgh', kilometrage=0)
+2025-10-16 12:31:58 | ERROR   | Models.BaseDeDonne | Erreur dans la mise à jour des données
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 97, in update_vehicule
+    self.cur.execute("""
+sqlite3.OperationalError: near "SET": syntax error
+2025-10-16 12:31:58 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:32:09 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:32:34 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:32:34 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:32:35 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:32:38 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='01', matricule='gfdgd', marque='hhgj', modele='hjhgjhgj', annee='ghjghjgh', kilometrage=0)
+2025-10-16 12:32:38 | ERROR   | Models.BaseDeDonne | Erreur dans la mise à jour des données
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 97, in update_vehicule
+    self.cur.execute("""
+sqlite3.OperationalError: near ",": syntax error
+2025-10-16 12:32:38 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:32:47 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='01', matricule='gfdgd', marque='hhgj', modele='hjhgjhgj', annee='ghjghjgh', kilometrage=40)
+2025-10-16 12:32:47 | ERROR   | Models.BaseDeDonne | Erreur dans la mise à jour des données
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 97, in update_vehicule
+    self.cur.execute("""
+sqlite3.OperationalError: near ",": syntax error
+2025-10-16 12:32:47 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:32:52 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:33:04 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:33:05 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:33:06 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:33:10 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='01', matricule='gfdgd', marque='hhgj', modele='hjhgjhgj', annee='ghjghjgh', kilometrage=40)
+2025-10-16 12:33:10 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-16 12:33:10 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:33:25 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:34:00 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:34:00 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:34:01 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:34:12 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:34:34 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:34:34 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:34:36 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:34:40 | INFO    | Models.BaseDeDonne | Erreur lors de la suppression de l'élement
+2025-10-16 12:34:40 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:34:44 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:34:44 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:34:50 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='01', matricule='gfdgd', marque='hhgj', modele='hjhgjhgj', annee='ghjghjgh', kilometrage=40)
+2025-10-16 12:34:50 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-16 12:34:50 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:34:57 | INFO    | Models.BaseDeDonne | Erreur lors de la suppression de l'élement
+2025-10-16 12:34:58 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:35:03 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:35:20 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:35:20 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:35:21 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:35:25 | INFO    | Models.BaseDeDonne | Erreur lors de la suppression de l'élement
+2025-10-16 12:35:25 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:35:31 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:36:51 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:36:52 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:36:53 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:36:57 | INFO    | Models.BaseDeDonne | Erreur lors de la suppression de l'élement
+2025-10-16 12:36:57 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:37:01 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:37:49 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:37:50 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:37:51 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:37:56 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:38:03 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:38:03 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:38:04 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:38:21 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='02', matricule='215', marque='fùdskfù*k', modele='ùfùmdsjfùm', annee='jjfdsùjfùj', kilometrage=1)
+2025-10-16 12:38:21 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-16 12:38:21 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:38:28 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:38:43 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='hgfmdlhù', description='mùjfùdjfùùm', type_intervention='gmjdfùjm', date_intervention='02/02/2000', vehicule='215', dure=4, technicien=['technicien'], statut='Planifié')
+2025-10-16 12:38:43 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 47, in add_intervention
+    self.cur.execute("INSERT INTO intervention(ref,description,type,date_intervention,vehicule,dure,technicien,statut) VALUES(?,?,?,?,?,?,?,?)",
+sqlite3.OperationalError: foreign key mismatch - "intervention" referencing "table_vehicule"
+2025-10-16 12:38:55 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:39:51 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='hgfmdlhù', description='mùjfùdjfùùm', type_intervention='gmjdfùjm', date_intervention='02/02/2000', vehicule='215', dure=4, technicien=['technicien'], statut='Planifié')
+2025-10-16 12:39:51 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 47, in add_intervention
+    self.cur.execute("INSERT INTO intervention(ref,description,type,date_intervention,vehicule,dure,technicien,statut) VALUES(?,?,?,?,?,?,?,?)",
+sqlite3.OperationalError: foreign key mismatch - "intervention" referencing "table_vehicule"
+2025-10-16 12:39:59 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='hgfmdlhù', description='mùjfùdjfùùm', type_intervention='gmjdfùjm', date_intervention='02/02/2000', vehicule='02', dure=4, technicien=['technicien'], statut='Planifié')
+2025-10-16 12:39:59 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 47, in add_intervention
+    self.cur.execute("INSERT INTO intervention(ref,description,type,date_intervention,vehicule,dure,technicien,statut) VALUES(?,?,?,?,?,?,?,?)",
+sqlite3.OperationalError: foreign key mismatch - "intervention" referencing "table_vehicule"
+2025-10-16 12:40:13 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:40:18 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:42:52 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:42:52 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:42:54 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:42:55 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:42:59 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:43:08 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='03', matricule='1', marque='fjùmdfjùm', modele='mùfjdùj', annee='ùjmfjdsùjù', kilometrage=0)
+2025-10-16 12:43:08 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-16 12:43:08 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:43:11 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:43:28 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='fdsfsk*', description='ùjùfdjù', type_intervention='ùk*dskf*', date_intervention='01/01/2000', vehicule='1', dure=4, technicien=['technicien'], statut='Planifié')
+2025-10-16 12:43:28 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 47, in add_intervention
+    self.cur.execute("INSERT INTO intervention(ref,description,type,date_intervention,vehicule,dure,technicien,statut) VALUES(?,?,?,?,?,?,?,?)",
+sqlite3.OperationalError: foreign key mismatch - "intervention" referencing "table_vehicule"
+2025-10-16 12:43:43 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:44:15 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:46:21 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:46:21 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:46:23 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:46:25 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:46:42 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='fsdfsdf', description='jmù\tjùm', type_intervention='fsdfs', date_intervention='01/01/2001', vehicule='1', dure=4, technicien=['technicien'], statut='Planifié')
+2025-10-16 12:46:42 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 46, in add_intervention
+    self.cur.execute("INSERT INTO intervention(ref,description,type,date_intervention,vehicule,dure,technicien,statut) VALUES(?,?,?,?,?,?,?,?)",
+sqlite3.OperationalError: foreign key mismatch - "intervention" referencing "table_vehicule"
+2025-10-16 12:46:53 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:49:24 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:49:24 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:49:26 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:49:30 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:49:35 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:49:39 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:50:22 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:50:22 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:50:23 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:50:26 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:50:39 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='gfhgfmj', description='ù*gk*df', type_intervention='ùjmjgfdùmjù', date_intervention='01/01/2000', vehicule='1', dure=4, technicien=['technicien'], statut='Planifié')
+2025-10-16 12:50:39 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 46, in add_intervention
+    self.cur.execute("INSERT INTO intervention(ref,description,type,date_intervention,vehicule,dure,technicien,statut) VALUES(?,?,?,?,?,?,?,?)",
+sqlite3.OperationalError: foreign key mismatch - "intervention" referencing "table_vehicule"
+2025-10-16 12:50:49 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:50:52 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:54:18 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:54:19 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:54:21 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:54:34 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='14', marque='fùdmmù', modele='jùjfdùj', annee='ùjfjdsùj', kilometrage=0)
+2025-10-16 12:54:34 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-16 12:54:34 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:54:37 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:54:39 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:54:40 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:54:58 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='fdsfd', description='*kfù*dkù*f', type_intervention='fdsfdsf', date_intervention='01/01/2008', vehicule='14', dure=4, technicien=['technicien'], statut='Planifié')
+2025-10-16 12:54:58 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 46, in add_intervention
+    self.cur.execute("INSERT INTO intervention(ref,description,type,date_intervention,vehicule,dure,technicien,statut) VALUES(?,?,?,?,?,?,?,?)",
+sqlite3.ProgrammingError: Error binding parameter 7: type 'list' is not supported
+2025-10-16 12:57:39 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:57:42 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:57:44 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:57:44 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:57:45 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:57:47 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:58:01 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='hfghgfhg', description='jùjùfdmjsùf', type_intervention='fghgfh', date_intervention='01/01/2000', vehicule='14', dure=1, technicien=['technicien'], statut='Planifié')
+2025-10-16 12:58:01 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 46, in add_intervention
+    self.cur.execute("INSERT INTO intervention(ref,description,type,date_intervention,vehicule,dure,technicien,statut) VALUES(?,?,?,?,?,?,?,?)",
+sqlite3.ProgrammingError: Error binding parameter 7: type 'list' is not supported
+2025-10-16 12:58:08 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:58:29 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:58:30 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:58:31 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:58:32 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 12:58:48 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='fdsmlj', description='ùhfùm', type_intervention='jùdsjfj', date_intervention='01/01/2000', vehicule='14', dure=4, technicien='mlfjdgmlh', statut='Planifié')
+2025-10-16 12:58:48 | INFO    | Models.BaseDeDonne | Intervention ajouter
+2025-10-16 12:59:07 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='4', description='ùhfùm', type_intervention='jùdsjfj', date_intervention='01/01/2000', vehicule='14', dure=4, technicien='mlfjdgmlh', statut='Planifié')
+2025-10-16 12:59:07 | INFO    | Models.BaseDeDonne | Intervention ajouter
+2025-10-16 12:59:20 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 12:59:48 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 12:59:48 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 12:59:49 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 12:59:52 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:00:01 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 13:00:01 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:00:06 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 13:00:25 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 13:00:25 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 13:00:26 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 13:00:28 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 13:01:33 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 13:01:33 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 13:01:34 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 13:01:38 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:01:44 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 13:01:46 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:01:48 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 13:01:49 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:02:01 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='fdsf', description='jùjfùjù', type_intervention='fdsj', date_intervention='01/01/2000', vehicule='14', dure=4, technicien='flmdsjfl', statut='Planifié')
+2025-10-16 13:02:01 | INFO    | Models.BaseDeDonne | Intervention ajouter
+2025-10-16 13:02:02 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:02:12 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 13:02:14 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:02:21 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='4', description='ùhfùm', type_intervention='jùdsjfj', date_intervention='01/01/2000', vehicule='14', dure=5, technicien='mlfjdgmlh', statut='Planifié')
+2025-10-16 13:02:21 | ERROR   | Models.BaseDeDonne | Erreur dans la mise à jour des données
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 80, in update_intervention
+    self.cur.execute(""" UPDATE intervention
+sqlite3.OperationalError: no such column: techinicien
+2025-10-16 13:02:21 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:02:27 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 13:02:40 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 13:02:40 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 13:02:41 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 13:02:43 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:02:54 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='4', description='ùhfùm', type_intervention='jùdsjfj', date_intervention='01/01/2000', vehicule='14', dure=45, technicien='mlfjdgmlh', statut='Planifié')
+2025-10-16 13:02:54 | ERROR   | Models.BaseDeDonne | Erreur dans la mise à jour des données
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 80, in update_intervention
+    self.cur.execute(""" UPDATE intervention
+sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 7, and there are 6 supplied.
+2025-10-16 13:02:54 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:03:06 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 13:03:21 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 13:03:21 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 13:03:22 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 13:03:23 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:03:28 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='fdsmlj', description='ùhfùm', type_intervention='jùdsjfj', date_intervention='01/01/2000', vehicule='14', dure=4, technicien='mlfjdgmlh', statut='Planifié')
+2025-10-16 13:03:28 | ERROR   | Models.BaseDeDonne | Erreur dans la mise à jour des données
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO(Gus Gus)\Models\BaseDeDonne.py", line 80, in update_intervention
+    self.cur.execute(""" UPDATE intervention
+sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 7, and there are 6 supplied.
+2025-10-16 13:03:29 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:03:36 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-16 13:04:29 | INFO    | __main__ | Demarrage de l'application
+2025-10-16 13:04:29 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-16 13:04:30 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-16 13:04:31 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:04:37 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='fdsmlj', description='ùhfùm', type_intervention='jùdsjfj', date_intervention='01/01/2000', vehicule='14', dure=14, technicien='mlfjdgmlh', statut='Planifié')
+2025-10-16 13:04:37 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-16 13:04:37 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:05:12 | INFO    | Models.BaseDeDonne | Suppression intervention effectué
+2025-10-16 13:05:12 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-16 13:05:18 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 12:38:52 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:40:17 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:40:27 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:40:49 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:40:49 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 12:40:50 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 12:40:53 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:41:21 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 12:42:59 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:43:00 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 12:43:01 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 12:43:03 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:43:08 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='gfmgjùm', intervalle_km=4, notify_before=5, create_auto=True)
+2025-10-17 12:43:08 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout)
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO version 2 GUSGUS\Models\BaseDeDonne.py", line 95, in add_maintenance_rule
+    self.cur.execute("INSERT INTO maintenance_rule(description,intervalle_km,notify_before_km,create_automatically,active) VALUES(?,?,?,?,?)",
+sqlite3.OperationalError: table maintenance_rule has no column named intervalle_km
+2025-10-17 12:43:16 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 12:44:23 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:44:23 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 12:44:24 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 12:44:26 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:44:31 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='fdsfds', intervalle_km=4, notify_before=6, create_auto=True)
+2025-10-17 12:44:31 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout)
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO version 2 GUSGUS\Models\BaseDeDonne.py", line 95, in add_maintenance_rule
+    self.cur.execute("INSERT INTO maintenance_rule(description,intervall_km,notify_before_km,create_automatically,active) VALUES(?,?,?,?,?)",
+sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 5, and there are 4 supplied.
+2025-10-17 12:44:34 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 12:45:21 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:45:21 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 12:45:22 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 12:45:24 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:45:32 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=True)
+2025-10-17 12:45:32 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout)
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO version 2 GUSGUS\Models\BaseDeDonne.py", line 98, in add_maintenance_rule
+    self.com.commit("Regle ajouté")
+TypeError: Connection.commit() takes no arguments (1 given)
+2025-10-17 12:46:08 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 12:46:17 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:46:17 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 12:46:18 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 12:46:26 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:46:35 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=True)
+2025-10-17 12:46:35 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-17 12:46:35 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:46:52 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 12:47:46 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:47:46 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 12:47:48 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 12:47:51 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:48:10 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 12:48:57 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:48:58 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 12:48:59 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 12:49:01 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:49:16 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=True)
+2025-10-17 12:49:16 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-17 12:49:16 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:50:29 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 12:50:31 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:50:31 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 12:50:32 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 12:50:33 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:50:42 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=True)
+2025-10-17 12:50:42 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-17 12:50:42 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:50:56 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 12:55:10 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:55:10 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 12:55:11 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 12:55:17 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:55:25 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 12:59:34 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 12:59:34 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 12:59:36 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 12:59:37 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 12:59:37 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1)]
+2025-10-17 13:00:51 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 13:01:36 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 13:01:36 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 13:01:37 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:01:39 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:01:39 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1)]
+2025-10-17 13:01:43 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 13:05:54 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 13:05:54 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 13:05:55 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:05:57 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:05:57 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1)]
+2025-10-17 13:06:05 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:06:05 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1)]
+2025-10-17 13:06:12 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 13:10:10 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 13:10:10 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 13:10:11 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:10:19 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 13:11:21 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 13:11:21 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 13:11:22 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:11:24 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:11:24 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1)]
+2025-10-17 13:11:32 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 13:13:33 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 13:13:33 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 13:13:34 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:13:36 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:13:36 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1)]
+2025-10-17 13:13:43 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 13:14:53 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 13:14:53 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 13:14:54 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:14:56 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:14:56 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1)]
+2025-10-17 13:15:04 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='gkfùdk*', intervalle_km=46, notify_before=152, create_auto=True)
+2025-10-17 13:15:04 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-17 13:15:04 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:15:04 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1), MaintenanceRule(description='gkfùdk*', intervalle_km=46, notify_before=152, create_auto=1)]
+2025-10-17 13:15:13 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:15:13 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1), MaintenanceRule(description='gkfùdk*', intervalle_km=46, notify_before=152, create_auto=1)]
+2025-10-17 13:15:37 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 13:16:19 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 13:16:19 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 13:16:20 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:16:23 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:16:23 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1), MaintenanceRule(description='gkfùdk*', intervalle_km=46, notify_before=152, create_auto=1)]
+2025-10-17 13:16:35 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 13:17:07 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 13:17:07 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 13:17:08 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:17:10 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:17:10 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1), MaintenanceRule(description='gkfùdk*', intervalle_km=46, notify_before=152, create_auto=1)]
+2025-10-17 13:17:29 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 13:17:38 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 13:17:38 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 13:17:39 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:17:42 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:17:42 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1), MaintenanceRule(description='gkfùdk*', intervalle_km=46, notify_before=152, create_auto=1)]
+2025-10-17 13:17:54 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 13:20:00 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 13:20:00 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 13:20:01 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:20:02 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:20:02 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1), MaintenanceRule(description='gkfùdk*', intervalle_km=46, notify_before=152, create_auto=1)]
+2025-10-17 13:20:19 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='test', intervalle_km=45, notify_before=100, create_auto=False)
+2025-10-17 13:20:19 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-17 13:20:20 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:20:20 | INFO    | Controlller.RuleController | [MaintenanceRule(description='bvcb', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='fmdshml', intervalle_km=45, notify_before=10, create_auto=1), MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=1), MaintenanceRule(description='jfdmsf', intervalle_km=40000, notify_before=540, create_auto=1), MaintenanceRule(description='gkfùdk*', intervalle_km=46, notify_before=152, create_auto=1), MaintenanceRule(description='test', intervalle_km=45, notify_before=100, create_auto=0)]
+2025-10-17 13:20:27 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 13:20:47 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 13:20:48 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 13:20:49 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:20:53 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:20:59 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 13:21:12 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 13:21:12 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 13:21:13 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:21:19 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:21:22 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 13:21:24 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:21:25 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 13:21:25 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 13:21:27 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 13:21:49 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 16:05:57 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 16:05:57 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 16:05:59 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 16:06:05 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 16:06:07 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 16:10:59 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 20:39:45 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 20:39:46 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 20:39:48 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:39:50 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:39:52 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:39:55 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 20:39:56 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 20:40:13 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='vidange', intervalle_km=450, notify_before=50, create_auto=True)
+2025-10-17 20:40:13 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-17 20:40:13 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 20:40:20 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:40:46 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='454', marque='TOYOTA', modele='corolla', annee='2008', kilometrage=0)
+2025-10-17 20:40:46 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO version 2 GUSGUS\Models\BaseDeDonne.py", line 90, in add_vehicule
+    self.cur.execute("""
+sqlite3.OperationalError: table vehicule_maintenance has no column named last_service_date
+2025-10-17 20:43:12 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 20:44:10 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 20:44:10 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 20:44:11 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:44:38 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='45', marque='toyota', modele='corolla', annee='2008', kilometrage=0)
+2025-10-17 20:44:38 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO version 2 GUSGUS\Models\BaseDeDonne.py", line 89, in add_vehicule
+    self.cur.execute("""
+sqlite3.OperationalError: 4 values for 3 columns
+2025-10-17 20:44:45 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 20:45:28 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 20:45:29 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 20:45:30 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:45:35 | INFO    | Models.BaseDeDonne | Erreur lors de la s:uppression de l'élement
+2025-10-17 20:45:35 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:45:44 | INFO    | Models.BaseDeDonne | Erreur lors de la s:uppression de l'élement
+2025-10-17 20:45:44 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:45:46 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 20:46:48 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 20:46:48 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 20:46:49 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:46:54 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 20:47:09 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='vidange', intervalle_km=4000, notify_before=20, create_auto=True)
+2025-10-17 20:47:09 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-17 20:47:09 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 20:47:19 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:47:48 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='10', marque='toyota', modele='corolla', annee='2008', kilometrage=0)
+2025-10-17 20:47:48 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-17 20:47:48 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:48:00 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 20:48:09 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='10', marque='toyota', modele='corolla', annee='2008', kilometrage=400)
+2025-10-17 20:48:09 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 20:48:09 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:48:14 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 20:48:48 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 20:48:48 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 20:48:49 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:48:55 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='10', marque='toyota', modele='corolla', annee='2008', kilometrage=200)
+2025-10-17 20:48:55 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 20:48:55 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:49:06 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 20:50:24 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 20:50:24 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 20:50:25 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:50:30 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='10', marque='toyota', modele='corolla', annee='2008', kilometrage=100)
+2025-10-17 20:50:30 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 20:50:30 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:50:36 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='10', marque='toyota', modele='corolla', annee='2008', kilometrage=400)
+2025-10-17 20:50:36 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 20:50:36 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:50:42 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 20:50:43 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:50:44 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 20:50:45 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 20:50:51 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 20:57:22 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 20:57:22 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 20:57:24 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:57:29 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='10', marque='toyota', modele='corolla', annee='2008', kilometrage=400)
+2025-10-17 20:57:29 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 20:57:29 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:57:33 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 20:57:34 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 20:57:37 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 20:57:43 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 21:06:34 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 21:06:34 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 21:06:35 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:06:37 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 21:06:38 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 21:06:49 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:07:09 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='2', matricule='15', marque='uk', modele='gfg', annee='2000', kilometrage=0)
+2025-10-17 21:07:09 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-17 21:07:09 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:07:13 | INFO    | Models.BaseDeDonne | Erreur lors de la s:uppression de l'élement
+2025-10-17 21:07:13 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:07:18 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 21:07:23 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 21:36:12 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 21:36:12 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 21:36:14 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:36:15 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:36:17 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 21:36:24 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:36:37 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='10', marque='toyota', modele='corolla', annee='2008', kilometrage=3990)
+2025-10-17 21:36:37 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 21:36:37 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:36:46 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 21:36:50 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 21:36:51 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:37:03 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='10', marque='toyota', modele='corolla', annee='2008', kilometrage=4000)
+2025-10-17 21:37:03 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 21:37:03 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:37:03 | ERROR   | Models.BaseDeDonne | Erreur lors de la création d'intervention
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO version 2 GUSGUS\Models\BaseDeDonne.py", line 213, in insert_intervention_if_not_existts
+    self.cur.execute("""
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+2025-10-17 21:37:20 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 21:38:23 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 21:38:24 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 21:38:25 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:38:26 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 21:38:28 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:38:51 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='3', matricule='45', marque='caca', modele='modele', annee='2000', kilometrage=0)
+2025-10-17 21:38:51 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-17 21:38:51 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:38:57 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 21:47:59 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 21:48:00 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 21:48:02 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:48:05 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 21:48:21 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='changement pneu', intervalle_km=1000, notify_before=100, create_auto=True)
+2025-10-17 21:48:21 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-17 21:48:22 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 21:48:28 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 21:48:31 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 21:48:57 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 21:48:57 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 21:48:58 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:49:26 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='4', matricule='45', marque='audi', modele='A5', annee='2025', kilometrage=0)
+2025-10-17 21:49:26 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO version 2 GUSGUS\Models\BaseDeDonne.py", line 84, in add_vehicule
+    self.cur.execute("INSERT INTO table_vehicule(ID,matricule,marque,modele,anne,kilometrage) VALUES(?,?,?,?,?,?)",
+sqlite3.IntegrityError: UNIQUE constraint failed: table_vehicule.matricule
+2025-10-17 21:49:42 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='4', matricule='50', marque='audi', modele='A5', annee='2025', kilometrage=0)
+2025-10-17 21:49:42 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-17 21:49:42 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:49:48 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 21:49:51 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 21:54:34 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 21:54:34 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 21:54:35 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:54:37 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 21:55:32 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 21:55:32 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 21:55:33 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:55:35 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:55:41 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='4', matricule='50', marque='audi', modele='A5', annee='2025', kilometrage=1000)
+2025-10-17 21:55:41 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 21:55:42 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 21:55:42 | ERROR   | Models.BaseDeDonne | Erreur lors de la création d'intervention
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO version 2 GUSGUS\Models\BaseDeDonne.py", line 213, in insert_intervention_if_not_existts
+    self.cur.execute("""
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+2025-10-17 21:56:04 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:00:27 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:00:27 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:00:28 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:00:35 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='4', matricule='50', marque='audi', modele='A5', annee='2025', kilometrage=1000)
+2025-10-17 22:00:35 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:00:35 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:00:35 | ERROR   | Models.BaseDeDonne | Erreur lors de la création d'intervention
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO version 2 GUSGUS\Models\BaseDeDonne.py", line 213, in insert_intervention_if_not_existts
+    self.cur.execute("""
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+2025-10-17 22:00:40 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:01:07 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:01:07 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:01:08 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:01:13 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 22:01:25 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='vidange', intervalle_km=400, notify_before=100, create_auto=True)
+2025-10-17 22:01:25 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-17 22:01:25 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 22:01:30 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:01:46 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:02:06 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='45', marque='toytota', modele='corolaa', annee='2008', kilometrage=0)
+2025-10-17 22:02:06 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-17 22:02:06 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:02:13 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='45', marque='toytota', modele='corolaa', annee='2008', kilometrage=400)
+2025-10-17 22:02:13 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:02:13 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:02:13 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-1-1 for vehicule 1 rule 1
+2025-10-17 22:02:21 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:02:42 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:02:45 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:05:28 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:05:28 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:05:29 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:05:32 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 22:05:42 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:06:02 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:06:02 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:06:03 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:06:05 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:06:50 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='Auto-1-1', description='jhgjh', type_intervention='vidange', date_intervention='02/04/2000', vehicule='1', dure=4, technicien='jhgjh', statut='Planifié', rule_id=None)
+2025-10-17 22:06:50 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:06:50 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:06:59 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='Auto-1-1', description='jhgjh', type_intervention='vidange', date_intervention='02/04/2000', vehicule='1', dure=4, technicien='jhgjh', statut='Planifié', rule_id=None)
+2025-10-17 22:06:59 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:06:59 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:07:14 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='Auto-1-1', description='jhgjh', type_intervention='vidange', date_intervention='02/04/2000', vehicule='1', dure=4, technicien='jhgjh', statut='Planifié', rule_id=None)
+2025-10-17 22:07:14 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:07:14 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:07:22 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:09:00 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:09:00 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:09:01 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:09:03 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:09:09 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='Auto-1-1', description='jhgjh', type_intervention='vidange', date_intervention='02/04/2000', vehicule='1', dure=4, technicien='jhgjh', statut='Réalisé', rule_id=None)
+2025-10-17 22:09:09 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:09:09 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:09:16 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:10:12 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:10:12 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:10:13 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:10:14 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:10:20 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='45', marque='toytota', modele='corolaa', annee='2008', kilometrage=800)
+2025-10-17 22:10:20 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:10:20 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:10:20 | ERROR   | Models.BaseDeDonne | Erreur lors de la création d'intervention
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO version 2 GUSGUS\Models\BaseDeDonne.py", line 213, in insert_intervention_if_not_existts
+    self.cur.execute("""
+sqlite3.IntegrityError: UNIQUE constraint failed: intervention.ref
+2025-10-17 22:10:33 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:16:04 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:16:04 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:16:05 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:16:57 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:16:57 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:16:59 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:17:03 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='45', marque='toytota', modele='corolaa', annee='2008', kilometrage=800)
+2025-10-17 22:17:03 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:17:03 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:17:03 | ERROR   | Models.BaseDeDonne | Erreur lors de la création d'intervention
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO version 2 GUSGUS\Models\BaseDeDonne.py", line 213, in insert_intervention_if_not_existts
+    self.cur.execute("""
+sqlite3.IntegrityError: UNIQUE constraint failed: intervention.ref
+2025-10-17 22:17:13 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:17:35 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:17:36 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:17:37 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:17:38 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 22:18:00 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='vidange', intervalle_km=400, notify_before=50, create_auto=True)
+2025-10-17 22:18:00 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-17 22:18:00 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 22:18:05 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:18:35 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='568', marque='toyota', modele='corolla', annee='2000', kilometrage=0)
+2025-10-17 22:18:35 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-17 22:18:35 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:18:43 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='568', marque='toyota', modele='corolla', annee='2000', kilometrage=400)
+2025-10-17 22:18:43 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:18:43 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:18:43 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-1-1 for vehicule 1 rule 1
+2025-10-17 22:18:48 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:18:57 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:18:58 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:19:41 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:20:36 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:20:36 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:20:38 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:20:57 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='2', matricule='4684', marque='Audi', modele='corolla', annee='2024', kilometrage=0)
+2025-10-17 22:20:57 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-17 22:20:57 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:21:04 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='2', matricule='4684', marque='Audi', modele='corolla', annee='2024', kilometrage=400)
+2025-10-17 22:21:04 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:21:04 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:21:04 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-2-1 for vehicule 2 rule 1
+2025-10-17 22:21:09 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:21:37 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:24:42 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:24:43 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:24:44 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:24:47 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:25:08 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='Auto-2-1', description='Intervention automatique: vidange — déclenchée par km 400', type_intervention='vidange', date_intervention='17/10/2025', vehicule='2', dure=0, technicien='Système', statut='Réalisé', rule_id=None)
+2025-10-17 22:25:08 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:25:08 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:25:20 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:26:24 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:26:25 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:26:26 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:26:30 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:26:33 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:26:43 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='2', matricule='4684', marque='Audi', modele='corolla', annee='2024', kilometrage=800)
+2025-10-17 22:26:43 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:26:43 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:26:43 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-2-1 for vehicule 2 rule 1
+2025-10-17 22:26:49 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:27:09 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:27:15 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='2', matricule='4684', marque='Audi', modele='corolla', annee='2024', kilometrage=1200)
+2025-10-17 22:27:15 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:27:15 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:27:15 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-2-1 for vehicule 2 rule 1
+2025-10-17 22:27:20 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:27:50 | INFO    | Models.BaseDeDonne | Suppression intervention effectué
+2025-10-17 22:27:50 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:28:03 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:29:08 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:29:08 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:29:09 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:29:11 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:29:49 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:29:49 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:29:50 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:29:53 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 22:30:03 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='vidange', intervalle_km=1000, notify_before=100, create_auto=True)
+2025-10-17 22:30:03 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-17 22:30:03 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 22:30:08 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:30:50 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='31', marque='Audi', modele='Q5', annee='2024', kilometrage=0)
+2025-10-17 22:30:50 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-17 22:30:50 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:31:20 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='31', marque='Audi', modele='Q5', annee='2024', kilometrage=400)
+2025-10-17 22:31:20 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:31:20 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:31:23 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:31:26 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:31:28 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:31:28 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 22:31:36 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:31:47 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='31', marque='Audi', modele='Q5', annee='2024', kilometrage=900)
+2025-10-17 22:31:47 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:31:47 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:31:51 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='31', marque='Audi', modele='Q5', annee='2024', kilometrage=950)
+2025-10-17 22:31:51 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:31:51 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:31:56 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='31', marque='Audi', modele='Q5', annee='2024', kilometrage=1000)
+2025-10-17 22:31:56 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:31:57 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:31:57 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-1-1--1760718717 for vehicule 1 rule 1
+2025-10-17 22:32:07 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:32:21 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:34:00 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:34:00 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:34:01 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:34:04 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:34:23 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='Auto-1-1--1760718717', description='Intervention automatique: vidange — déclenchée par km 1000', type_intervention='vidange', date_intervention='17/10/2025', vehicule='1', dure=0, technicien='Système', statut='Réalisé', rule_id=None)
+2025-10-17 22:34:23 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:34:23 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:34:30 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:34:34 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:34:41 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:34:41 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:34:42 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:34:45 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:34:49 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 22:58:45 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 22:58:45 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 22:58:46 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:59:12 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 22:59:15 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:59:35 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='2', matricule='hfdmhl', marque='Toyota', modele='corolla', annee='2008', kilometrage=0)
+2025-10-17 22:59:35 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-17 22:59:36 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:59:44 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='2', matricule='hfdmhl', marque='Toyota', modele='corolla', annee='2008', kilometrage=1000)
+2025-10-17 22:59:44 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 22:59:44 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 22:59:44 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-2-1--1760720384 for vehicule 2 rule 1
+2025-10-17 22:59:48 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 23:00:05 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='Auto-2-1--1760720384', description='Intervention automatique: vidange — déclenchée par km 1000', type_intervention='vidange', date_intervention='17/10/2025', vehicule='2', dure=0, technicien='Système', statut='Réalisé', rule_id=None)
+2025-10-17 23:00:05 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 23:00:10 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 23:03:32 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 23:03:32 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 23:03:33 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 23:03:37 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 23:03:52 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='vidange', intervalle_km=4000, notify_before=100, create_auto=True)
+2025-10-17 23:03:52 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-17 23:03:52 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 23:03:57 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-17 23:10:12 | INFO    | __main__ | Demarrage de l'application
+2025-10-17 23:10:12 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-17 23:10:13 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 23:10:19 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 23:10:23 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 23:10:44 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='464', marque='Toyota', modele='corolla', annee='2008', kilometrage=0)
+2025-10-17 23:10:44 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-17 23:10:44 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 23:10:54 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='464', marque='Toyota', modele='corolla', annee='2008', kilometrage=1000)
+2025-10-17 23:10:54 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 23:10:54 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 23:11:06 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-17 23:11:17 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='464', marque='Toyota', modele='corolla', annee='2008', kilometrage=4000)
+2025-10-17 23:11:17 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-17 23:11:17 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 23:11:17 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-1-1--1760721077 for vehicule 1 rule 1
+2025-10-17 23:11:23 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 23:11:37 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='Auto-1-1--1760721077', description='Intervention automatique: vidange — déclenchée par km 4000', type_intervention='vidange', date_intervention='17/10/2025', vehicule='1', dure=0, technicien='Système', statut='Réalisé', rule_id=None)
+2025-10-17 23:11:37 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 23:12:05 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 23:12:06 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-17 23:12:07 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-17 23:12:14 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 08:46:22 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 08:46:23 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 08:46:26 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 08:46:31 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 08:52:08 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 08:52:08 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 08:52:09 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 08:52:25 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='2', matricule='464213', marque='Toyota', modele='crolla', annee='2008', kilometrage=0)
+2025-10-18 08:52:25 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-18 08:52:25 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 08:52:35 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='2', matricule='464213', marque='Toyota', modele='crolla', annee='2008', kilometrage=4000)
+2025-10-18 08:52:35 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-18 08:52:35 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 08:52:35 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-2-1--1760755955 for vehicule 2 rule 1
+2025-10-18 08:52:44 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 08:52:54 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 08:53:32 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 08:53:32 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 08:53:33 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 08:53:35 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 08:53:46 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='Auto-2-1--1760755955', description='Intervention automatique: vidange — déclenchée par km 4000', type_intervention='vidange', date_intervention='12/12/2008', vehicule='2', dure=0, technicien='Système', statut='Réalisé', rule_id=None)
+2025-10-18 08:53:46 | INFO    | Models.BaseDeDonne | Mise à jour intervention effectuée et last_service_km mis à jour si applicable
+2025-10-18 08:53:46 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 08:53:55 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 08:59:12 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 08:59:12 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 08:59:13 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 08:59:15 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 08:59:19 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:00:49 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:00:50 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:00:51 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:00:52 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:00:57 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:08:51 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:08:51 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:08:52 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:08:58 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:09:02 | INFO    | Models.BaseDeDonne | Erreur lors de la suppression de l'élement
+2025-10-18 09:09:02 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:09:24 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:09:30 | INFO    | Models.BaseDeDonne | Erreur lors de la suppression de l'élement
+2025-10-18 09:09:30 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:09:36 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:10:27 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:10:27 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:10:28 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:10:30 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:10:34 | INFO    | Models.BaseDeDonne | Suppression règle effectué
+2025-10-18 09:10:34 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:10:45 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:11:00 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:11:54 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:11:54 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:11:55 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:11:57 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:12:02 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:12:13 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:12:15 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:12:45 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:12:45 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:12:46 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:12:47 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:12:50 | INFO    | Models.BaseDeDonne | Erreur lors de la suppression de l'élement
+2025-10-18 09:12:50 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:12:54 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:12:57 | INFO    | Models.BaseDeDonne | Suppression intervention effectué
+2025-10-18 09:12:57 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:13:01 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:14:48 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:14:49 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:14:50 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:14:55 | INFO    | Models.BaseDeDonne | Erreur lors de la suppression de l'élement
+2025-10-18 09:14:55 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:15:03 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:16:43 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:16:44 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:16:45 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:16:49 | INFO    | Models.BaseDeDonne | Erreur lors de la suppression de l'élement
+2025-10-18 09:16:49 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:17:04 | INFO    | Models.BaseDeDonne | Erreur lors de la suppression de l'élement
+2025-10-18 09:17:04 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:17:06 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:17:13 | INFO    | Models.BaseDeDonne | Suppression intervention effectué
+2025-10-18 09:17:13 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:17:16 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:17:21 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:17:21 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:17:22 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:17:23 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:17:26 | INFO    | Models.BaseDeDonne | Erreur lors de la suppression de l'élement
+2025-10-18 09:17:26 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:17:28 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:20:21 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:20:21 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:20:22 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:20:27 | INFO    | Models.BaseDeDonne | Suppression vehicule effectué
+2025-10-18 09:20:27 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:20:30 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:22:41 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:22:41 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:22:42 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:22:50 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:22:54 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:23:01 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:23:04 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:23:05 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:23:16 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:23:17 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:23:20 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:23:34 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:23:35 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:23:40 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:23:45 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:23:46 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:24:05 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='dmsdmlh', description='jùmjd', type_intervention='fmldhml', date_intervention='02/02/2008', vehicule='2', dure=4, technicien='ùfdjsùm', statut='Planifié', rule_id=None)
+2025-10-18 09:24:05 | INFO    | Models.BaseDeDonne | Intervention ajouter
+2025-10-18 09:24:05 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:24:23 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:24:46 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:24:47 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:24:48 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:24:50 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:24:55 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:24:55 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:24:59 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:25:46 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:25:46 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:25:48 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:25:52 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:26:05 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='vidange', intervalle_km=2000, notify_before=400, create_auto=True)
+2025-10-18 09:26:05 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-18 09:26:05 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:26:14 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:26:16 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:26:40 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='3', matricule='fjdsljù', marque='ford', modele='mustang', annee='2020', kilometrage=0)
+2025-10-18 09:26:40 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-18 09:26:40 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:26:43 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:26:49 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='3', matricule='fjdsljù', marque='ford', modele='mustang', annee='2020', kilometrage=2000)
+2025-10-18 09:26:49 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-18 09:26:49 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:26:49 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-3-2--1760758009 for vehicule 3 rule 2
+2025-10-18 09:26:53 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:27:11 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:27:16 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:27:21 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='Auto-3-2--1760758009', description='Intervention automatique: vidange — déclenchée par km 2000', type_intervention='vidange', date_intervention='18/10/2025', vehicule='3', dure=0, technicien='Système', statut='Réalisé', rule_id=None)
+2025-10-18 09:27:21 | INFO    | Models.BaseDeDonne | Mise à jour intervention effectuée et last_service_km mis à jour si applicable
+2025-10-18 09:27:22 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:27:24 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:27:38 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='2', matricule='464213', marque='Toyota', modele='crolla', annee='2008', kilometrage=8000)
+2025-10-18 09:27:38 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-18 09:27:38 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:27:50 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='3', matricule='fjdsljù', marque='ford', modele='mustang', annee='2020', kilometrage=5000)
+2025-10-18 09:27:50 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-18 09:27:50 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:27:50 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-3-2--1760758070 for vehicule 3 rule 2
+2025-10-18 09:27:54 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:27:57 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:28:33 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:36:19 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:36:19 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:36:20 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:36:34 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:36:37 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:37:09 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='4', matricule='545645', marque='mercedez', modele='benz', annee='2008', kilometrage=0)
+2025-10-18 09:37:09 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-18 09:37:09 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:37:16 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='4', matricule='545645', marque='mercedez', modele='benz', annee='2008', kilometrage=1600)
+2025-10-18 09:37:16 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-18 09:37:16 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:37:24 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='4', matricule='545645', marque='mercedez', modele='benz', annee='2008', kilometrage=1700)
+2025-10-18 09:37:24 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-18 09:37:24 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:37:31 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:44:30 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:44:30 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:44:31 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:44:37 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='4', matricule='545645', marque='mercedez', modele='benz', annee='2008', kilometrage=1800)
+2025-10-18 09:44:37 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-18 09:44:37 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:44:37 | INFO    | Controlller.VehiculeController | Rappel (soon) pour véhicule 4 règle 2 (next_due=2000)
+2025-10-18 09:44:48 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:49:31 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:49:31 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:49:33 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:49:41 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-18 09:50:31 | INFO    | __main__ | Demarrage de l'application
+2025-10-18 09:50:32 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-18 09:50:33 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-18 09:50:43 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-18 09:50:55 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-18 09:51:01 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-21 19:13:56 | INFO    | __main__ | Demarrage de l'application
+2025-10-21 19:13:57 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-21 19:14:03 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-21 19:14:18 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-21 21:48:18 | INFO    | __main__ | Demarrage de l'application
+2025-10-21 21:48:18 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-21 21:48:20 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-21 21:48:56 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-21 21:49:22 | INFO    | Controlller.RuleController | Rule MaintenanceRule(description='test', intervalle_km=6000, notify_before=500, create_auto=True)
+2025-10-21 21:49:22 | INFO    | Models.BaseDeDonne | Regle ajouté
+2025-10-21 21:49:22 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-21 21:49:48 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='4', matricule='431', marque='gmljf', modele='mljfdmls', annee='lmjgmld', kilometrage=87000)
+2025-10-21 21:49:48 | ERROR   | Models.BaseDeDonne | Erreur lors de l'ajout
+Traceback (most recent call last):
+  File "c:\python\Projet pour client\GMAO version 2 GUSGUS\Models\BaseDeDonne.py", line 84, in add_vehicule
+    self.cur.execute("INSERT INTO table_vehicule(ID,matricule,marque,modele,anne,kilometrage) VALUES(?,?,?,?,?,?)",
+sqlite3.IntegrityError: UNIQUE constraint failed: table_vehicule.ID
+2025-10-21 21:49:54 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='5', matricule='431', marque='gmljf', modele='mljfdmls', annee='lmjgmld', kilometrage=87000)
+2025-10-21 21:49:54 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-10-21 21:49:54 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-21 21:50:13 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='5', matricule='431', marque='gmljf', modele='mljfdmls', annee='lmjgmld', kilometrage=93000)
+2025-10-21 21:50:13 | INFO    | Models.BaseDeDonne | Mise à jour effectué
+2025-10-21 21:50:13 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-21 21:50:13 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-5-2--1761061813 for vehicule 5 rule 2
+2025-10-21 21:50:13 | INFO    | Controlller.VehiculeController | Intervention automatique insérée (transaction) : AUTO-5-2
+2025-10-21 21:50:13 | INFO    | Models.BaseDeDonne | Auto-created intervention Auto-5-3--1761061813 for vehicule 5 rule 3
+2025-10-21 21:50:13 | INFO    | Controlller.VehiculeController | Intervention automatique insérée (transaction) : AUTO-5-3
+2025-10-21 21:50:24 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-21 21:53:57 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-24 16:41:48 | INFO    | __main__ | Demarrage de l'application
+2025-10-24 16:41:49 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-24 16:41:50 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-24 16:41:52 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-10-31 12:25:05 | INFO    | __main__ | Demarrage de l'application
+2025-10-31 12:25:05 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-10-31 12:25:07 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-10-31 12:25:26 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-10-31 12:25:47 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-10-31 12:26:22 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-11-04 18:18:58 | INFO    | __main__ | Demarrage de l'application
+2025-11-04 18:18:59 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-11-04 18:19:01 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 18:19:05 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-11-04 18:19:11 | INFO    | __main__ | Demarrage de l'application
+2025-11-04 18:19:12 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-11-04 18:19:13 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 18:19:15 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-11-04 18:39:09 | INFO    | __main__ | Demarrage de l'application
+2025-11-04 18:39:10 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-11-04 18:39:11 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 18:39:13 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 18:39:17 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-11-04 18:52:26 | INFO    | __main__ | Demarrage de l'application
+2025-11-04 18:52:26 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-11-04 18:52:28 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 18:52:29 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 18:53:12 | INFO    | Controlller.VehiculeController | Vehicule Vehicule(ID='1', matricule='T800', marque='Citroen', modele='C4', annee='2008', kilometrage=0)
+2025-11-04 18:53:12 | INFO    | Models.BaseDeDonne | Vehicule ajouter
+2025-11-04 18:53:12 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 18:53:28 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 18:54:19 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 18:54:31 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 18:55:00 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='I1', description='jùfjdsffd', type_intervention='vidange', date_intervention='02/02/2000', vehicule='1', dure=2, technicien='fdmjfù', statut='Planifié', rule_id=None)
+2025-11-04 18:55:00 | INFO    | Models.BaseDeDonne | Intervention ajouter
+2025-11-04 18:55:00 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 18:55:04 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-11-04 18:55:26 | INFO    | __main__ | Demarrage de l'application
+2025-11-04 18:55:26 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-11-04 18:55:27 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 18:55:29 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 18:55:31 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 18:55:31 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 18:55:33 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 18:55:34 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 18:55:58 | INFO    | Controlller.InterventionController | Intervention: Intervention(ref='I2', description='mlfdmlfsf', type_intervention='Changement pneu', date_intervention='02/05/2008', vehicule='1', dure=4, technicien='fjmsdjfml', statut='Planifié', rule_id=None)
+2025-11-04 18:55:58 | INFO    | Models.BaseDeDonne | Intervention ajouter
+2025-11-04 18:55:58 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 18:56:07 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-11-04 18:56:08 | INFO    | __main__ | Demarrage de l'application
+2025-11-04 18:56:09 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-11-04 18:56:10 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 18:56:11 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-11-04 19:01:16 | INFO    | __main__ | Demarrage de l'application
+2025-11-04 19:01:17 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-11-04 19:01:18 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 19:01:19 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 19:01:25 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-11-04 19:02:05 | INFO    | __main__ | Demarrage de l'application
+2025-11-04 19:02:05 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-11-04 19:02:06 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 19:02:08 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 19:05:39 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-11-04 19:07:58 | INFO    | __main__ | Demarrage de l'application
+2025-11-04 19:07:59 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-11-04 19:08:00 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 19:08:02 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 19:08:05 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-11-04 19:08:58 | INFO    | __main__ | Demarrage de l'application
+2025-11-04 19:08:58 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-11-04 19:08:59 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 19:09:01 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 19:09:04 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-11-04 19:12:35 | INFO    | __main__ | Demarrage de l'application
+2025-11-04 19:12:36 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-11-04 19:12:37 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-11-04 19:12:38 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-11-04 19:12:41 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2025-12-18 18:45:13 | INFO    | __main__ | Demarrage de l'application
+2025-12-18 18:45:14 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2025-12-18 18:45:16 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-12-18 18:45:23 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-12-18 18:45:24 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-12-18 18:45:27 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2025-12-18 18:45:27 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2025-12-18 18:45:28 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2025-12-18 18:45:30 | INFO    | Models.BaseDeDonne | Bdd fermé 
+2026-02-16 08:00:29 | INFO    | __main__ | Demarrage de l'application
+2026-02-16 08:00:30 | INFO    | Models.BaseDeDonne | Base de données initialisée
+2026-02-16 08:00:33 | INFO    | Models.BaseDeDonne | Extraction vehicule effectué depuis la Bdd
+2026-02-16 08:00:36 | INFO    | Models.BaseDeDonne | Extraction intervention effectué depuis la Bdd
+2026-02-16 08:00:37 | INFO    | Models.BaseDeDonne | Extraction regle effectué
+2026-02-16 08:00:52 | INFO    | Models.BaseDeDonne | Bdd fermé 
