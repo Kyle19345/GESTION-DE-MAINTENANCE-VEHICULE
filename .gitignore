@@ -118,3 +118,5 @@ instance/
 logs/
 __pycache__/
 *.pyc
+
+logs/
